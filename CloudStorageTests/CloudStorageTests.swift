@@ -8,6 +8,39 @@
 
 import XCTest
 
+enum NetWorkError:Error{
+    case uploadfailed
+}
+
+
+class S3MockUploadSuccess : CloudStorage {
+    var authenticationCallCount = 0
+    var uploadImageWasCallCount = 0
+    
+    func uploadImage(imageURL: URL) throws -> String {
+        uploadImageWasCallCount += 1
+        return "http:s3/uitm2/abcd.jpg"
+    }
+    
+    func authenticate() {
+        authenticationCallCount += 1
+    }
+}
+
+class S3MockUploadFail : CloudStorage {
+    var authenticationCallCount = 0
+    var uploadImageWasCallCount = 0
+    
+    func uploadImage(imageURL: URL) throws -> String {
+        uploadImageWasCallCount += 1
+        throw NetWorkError.uploadfailed
+    }
+    
+    func authenticate() {
+        authenticationCallCount += 1
+    }
+}
+
 class CloudStorageTests: XCTestCase {
     
     override func setUp() {
@@ -20,16 +53,9 @@ class CloudStorageTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testS3Authenticate() {
+        let s3 = S3MockUploadSuccess()
+        s3.authenticate()
     }
     
 }
