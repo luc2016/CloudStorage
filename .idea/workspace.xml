@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01d88fbf-d362-462a-968d-cbba113eeab3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sources/CloudStorage.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sources/S3.swift" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CloudStorage/CloudStorage.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CloudStorage/Info.plist" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CloudStorage.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/CloudStorage.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CloudStorage.xcodeproj/xcuserdata/lcui.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="$PROJECT_DIR$/CloudStorage.xcodeproj/xcuserdata/lcui.xcuserdatad/xcschemes/xcschememanagement.plist" />
-    </list>
+    <list default="true" id="01d88fbf-d362-462a-968d-cbba113eeab3" name="Default" comment="" />
     <ignored path="CloudStorage.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -151,12 +144,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1529350203043</updated>
-      <workItem from="1529350204463" duration="860000" />
+      <workItem from="1529350204463" duration="1032000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="860000" />
+    <option name="totallyTimeSpent" value="1032000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
